@@ -25,8 +25,8 @@ if ($_POST)
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers.= "From: <" . $from . ">";
-	$headers.= "to: <" . $to . ">";
+	$headers.= "From: <' . $from . '>";
+	$headers.= "to: <' . $to . '>";
 	mail($to, $subject, $msg, $headers);
 
 	//echo json_encode( $_POST );
